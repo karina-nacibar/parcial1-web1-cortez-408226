@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Facebook SPA Clásico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <div class="logo">facebook</div>
+    <input type="search" class="search" placeholder="Buscar">
+  </header>
+
+
+  <nav class="tabs">
+    <button data-section="muro" class="tab active">Muro</button>
+    <button data-section="info" class="tab">Info</button>
+    <button data-section="photos" class="tab">Fotos</button>
+    <button data-section="boxes" class="tab">Cajas</button>
+  </nav>
+
+  <main class="layout">
+
+    <aside class="sidebar">
+      <section class="profile">
+        <img src="img/descarga (5).jpg" alt="Foto de perfil" class="avatar">
+        <h2 class="username">Karina</h2>
+        <div class="links">
+  <p><strong>Información</strong></p>
+  <p>Info</p>
+
+  <p><strong>Amigos</strong></p>
+  <div class="friends">
+    <img src="img/descarga (6).jpg" alt="Amigo 1">
+    <img src="img/mamaco.jpg" alt="Amigo 2">
+    <img src="img/perrito.jpg" alt="Amigo 3">
+    <img src="img/descarga (8).jpg" alt="Amigo 4">
+    <img src="img/descarga (9).jpg" alt="Amigo 5">
+    <img src="img/descarga (10).jpg" alt="Amigo 6">
+  </div>
+
+  <a href="#">Ver todo</a>
+</div>
+
+      </section>
+    </aside>
+
+    <section id="content" class="content">
+
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 Demo Facebook SPA</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

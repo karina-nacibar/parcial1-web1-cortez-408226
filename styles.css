@@ -1,0 +1,277 @@
+* {margin:0; padding:0; box-sizing:border-box;}
+body {
+  font-family: Arial, sans-serif;
+  background:#e9ebee;
+}
+
+.topbar {
+  background:#3b5998;
+  color:white;
+  display:flex;
+  align-items:center;
+  padding:0.5rem 1rem;
+}
+.logo {
+  font-size:1.8rem;
+  font-weight:bold;
+}
+.search {
+  margin-left:auto;
+  padding:0.4rem;
+  border:none;
+  border-radius:4px;
+}
+
+.tabs {
+  background:#f6f7f9;
+  display:flex;
+  padding-left:260px; 
+  border-bottom:1px solid #ccc;
+}
+.tab {
+  background:none;
+  border:none;
+  padding:0.8rem 1.5rem;
+  cursor:pointer;
+  font-weight:bold;
+  color:#3b5998;
+}
+.tab.active {
+  background:#fff;
+  border-top:3px solid #3b5998;
+}
+
+.layout {
+  display:grid;
+  grid-template-columns:250px 1fr;
+  gap:1rem;
+  padding:1rem;
+}
+
+.sidebar {
+  background:#f6f7f9;
+  border:1px solid #d8dfea;
+  padding:1rem;
+}
+.avatar {
+  width:100%;
+  border-radius:4px;
+  margin-bottom:0.5rem;
+}
+.username {
+  background:#3b5998;
+  color:white;
+  padding:0.3rem;
+  margin-bottom:0.5rem;
+}
+.links p, .links a {
+  margin:0.4rem 0;
+  color:#3b5998;
+  text-decoration:none;
+}
+
+.content {
+  background:#fff;
+  border:1px solid #d8dfea;
+  padding:1rem;
+  min-height:400px;
+}
+.post {
+  background:#f6f7f9;
+  border:1px solid #d8dfea;
+  margin-bottom:1rem;
+  padding:0.5rem;
+}
+.photos-grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fill, minmax(100px,1fr));
+  gap:0.5rem;
+}
+.photos-grid img {
+  width:100%;
+  display:block;
+  border:1px solid #ccc;
+}
+
+.footer {
+  text-align:center;
+  padding:1rem;
+  background:#3b5998;
+  color:white;
+  margin-top:1rem;
+}
+
+.friends {
+  display: flex; 
+  flex-wrap: wrap;  
+  gap: 6px;
+  margin-top: 0.5rem;
+}
+
+.friends img {
+  width: 40px;    
+  height: 40px;
+  border-radius: 4px;   
+  object-fit: cover;   
+  border: 1px solid #ccc;
+}
+
+.post-box {
+  border: 1px solid #d0d0d0;
+  background: #f5f9ff;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.post-box textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 0.5rem;
+  resize: vertical;
+  min-height: 60px;
+  margin-bottom: 0.5rem;
+}
+
+.attach {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.attach input[type="file"] {
+  margin-top: 0.3rem;
+}
+
+.post {
+  border: 1px solid #d0d0d0;
+  padding: 0.8rem;
+  background: #fff;
+  margin-bottom: 1rem;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.post-header img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 0.5rem;
+}
+
+.post-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  color: #1877f2;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.new-post-form {
+  background: #fff;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.new-post-form textarea {
+  width: 100%;
+  min-height: 60px;
+  margin-bottom: 10px;
+  padding: 8px;
+  resize: vertical;
+}
+
+.new-post-form input[type="file"] {
+  margin-bottom: 10px;
+}
+
+.new-post-form button {
+  padding: 8px 16px;
+  background: #1877f2;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions {
+  margin-top: 10px;
+}
+
+.actions button {
+  margin-right: 10px;
+  padding: 4px 12px;
+  background: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.post img {
+  display: block;
+  max-width: 50%;  
+  height: auto;   
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.box {
+  background: #fff;
+  border: 1px solid #d8dfea;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 6px;
+}
+.mini-photos {
+  display: flex;
+  gap: 6px;
+  margin-top: 0.5rem;
+}
+.mini-photos img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.info-section {
+  margin-bottom: 1rem;
+}
+
+.info-section h3 {
+  color: #3b5998;
+  font-size: 1.1rem;
+  margin-bottom: 0.4rem;
+  border-bottom: 1px solid #d8dfea;
+  padding-bottom: 0.2rem;
+}
+
+.info-section p {
+  margin: 0.2rem 0;
+}
+
+.info-profile {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.profile-photo {
+  width: 150px;    
+  height: 150px;
+  border-radius: 50%; 
+  object-fit: cover; 
+  border: 3px solid #3b5998;
+  margin-bottom: 0.5rem;
+}
